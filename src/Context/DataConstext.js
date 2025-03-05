@@ -63,15 +63,7 @@ export const DataProvider = ({ children }) => {
     }
   };
   const handleEdit = async (id) => {
-    const formattedDate = new Date().toLocaleString("en-US", {
-      year: "numeric",
-      month: "long",
-      day: "numeric",
-      hour: "2-digit",
-      minute: "2-digit",
-      second: "2-digit",
-      hour12: true,
-    });
+    const formattedDate = new Date();
 
     const updatedpost = {
       id,
